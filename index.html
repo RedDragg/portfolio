@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="https://kit.fontawesome.com/fee5056558.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <p class="logo"><span>E</span>lton.</p>
+                <ul id="sidemenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" >Over mij</a></li>
+                    <li><a href="project.html">Projecten</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p> UI/UX Designer</p>
+                <h1>Hi, Ik ben <span>Elton</span> <br>Irokromo</h1>
+                <p> Gevestigd in Flevoland,<br>Nederland</p>
+            </div>
+        </div>
+    </header>
+    <section>
+        <!-- <img src="images/sky.jpg"> -->
+        <img src="images/Frame 51.png" id="mountains_behind">
+        <img src="images/fog.png" id="fog">
+        <img src="images/Frame 52.png" id="mountains_front">
+    </section>
+
+
+
+ <!-- ------------About-------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/portfolio2.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Als student CMD raak ik gepassioneerd in het webdesign, omdat ik mijn groei kan zien naar een zelfstandig web developer. 
+                        Ik werk met passie en perfectie en creëer daardoor denkwaardige projecten.
+                        Wanneer ik niet aan het coderen ben, dan ben ik waarschijnlijk aan het volleyballen of films kijken.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">competenties</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Graphic Design</span><br><p>Ontwerpen van visuele content</p></li>
+                            <li><span>Web Development</span><br><p>Ontwerp en structuur van websites</p></li>
+                            <li><span>Experienced Design</span><br><p>Ontwerpen gericht op emoties en interacties, creëert memorabele gebruikerservaringen door middel van zintuigelijke beleving.</p> </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Zelfstandig</span><br><p>Op eigen initiatief handelen, verantwoordelijkheid nemen.</p></li>
+                            <li><span>Probleemoplossend</span><br><p>Analytisch denken, creatieve benaderingen, obstakels overwinnen, resultaatgericht.</p></li>
+                            <li><span>Klant vriendelijkheidt</span><br><p>Gericht op tevredenheid, inspelen op behoeften, klant centraal stellen, respectvol.</p></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Communication Multimedia Design</span><br><p></p>tweede jaars student</li>
+                            <li><span>Applicatieontwikkeling</span><br><p></p>MBO 4 Diploma</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- ----------logos-slider----------- -->
+    <div class="logos">
+        <div class="logos-slide">
+            <img src="./images/icon1.png">
+            <img src="./images/icon2.png">
+            <img src="./images/icon3.png">
+            <img src="./images/icon4.png">
+            <img src="./images/icon5.png">
+            <img src="./images/icon6.png">
+            <img src="./images/icon7.png">
+            <img src="./images/icon8.png">
+        </div>
+    </div>
+    <!-- -------------services--------------- -->
+    <div id="services">
+        <div class="container">
+        <h1 class="sub-title">My Skills</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Als beginnende programmeur beschik ik over een solide basiskennis van HTML/CSS. Ik heb enige ervaring met JavaScript, PHP , Nodejs en databases. Ik ben voortdurend bezig met het uitbreiden van mijn vaardigheden en het verkennen van nieuwe technologieën om mijn expertise verder te ontwikkelen.</p>
+                    <p class="morebtn" onclick="learnmore(this)">Programmeer levels<i class="fa-solid fa-caret-left"></i></p>
+                       <li class="menu">
+                        <ul>
+                          <li><p>HTML<span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></span></p></li>
+                          <li><p>CSS<span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></span></p></li>
+                          <li><p>Javascript<span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></span></p></li>
+                          <li><p>nodeJS<span><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></span></p></li>
+                          <li><p>PHP<span><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></span></p></li>
+                          <li><p>SQL<span><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></span></p></li>
+                        </ul>
+                       </li> 
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Als gedreven UI/UX designer ben ik constant op zoek naar strategische en intuïtieve ontwerpoplossingen. Door voortdurend te streven naar innovatie en vakmanschap, ben ik ervan overtuigd dat ik een waardevolle bijdrage kan leveren aan elk ontwerpproject of team.</p>
+                    <p class="morebtn" onclick="learnmore2(this)">UI/UX levels<i class="fa-solid fa-caret-left"></i></p>
+                       <li class="menu2">
+                        <ul>
+                          <li><p>Figma<span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></span></p></li>
+                          <li><p>adobeXD<span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></span></p></li>
+                          <li><p>Miro<span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></span></p></li>
+                          <li><p>Photoshop<span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></span></p></li>
+                        </ul>
+                       </li> 
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Overige skills</h2>
+                    <p>Ik ben ook een gedreven volleyballer die meedoet aan wedstrijden. ik speel momenteel derde klasse van de vier, dus ik ben nog onderweg. Verder ben ik ook bezig in blender en heb ik enige ervaringen met after effects. Animeren vind ik ook wel gaaf, maar heb dit vak nog niet zo serieus genomen.</p>
+                    <p class="morebtn" onclick="learnmore3(this)">Skills levels<i class="fa-solid fa-caret-left"></i></p>
+                       <li class="menu3">
+                        <ul>
+                          <li><p>Blender<span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></span></p></li>
+                          <li><p>After Effects<span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></span></p></li>
+                          <li><p>Volleybal<span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span></p></li>
+                          <li><p>Boulderen<span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></span></p></li>
+                          <li><p>gezelligheid<span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span></p></li>
+                        </ul>
+                       </li> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- --------------portfolio--------------- -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/Numbahh.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/BBC.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <script src="javascript/scripts.js"></script>
+</body>
+</html>
